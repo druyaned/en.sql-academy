@@ -62,11 +62,11 @@ Where `pattern` is the regular expression that defines the search pattern.
 
 -   **Get all users whose names start with "John":**
 
-        ```sql
-        SELECT * FROM Users WHERE name REGEXP '^John'
-        ```
+    ```sql
+    SELECT * FROM Users WHERE name REGEXP '^John'
+    ```
 
-        This expression searches for strings starting with "John". The `^` symbol indicates the start of the string.
+    This expression searches for strings starting with "John". The `^` symbol indicates the start of the string.
 
 -   **Display all school subjects whose names end with the letter “e” or “y”:**
 
@@ -78,9 +78,9 @@ Where `pattern` is the regular expression that defines the search pattern.
 
 -   **Find all users whose email addresses end with “@outlook.com” or “@icloud.com”:**
 
-        ```sql
-        SELECT * FROM Users WHERE email REGEXP '@(outlook.com|icloud.com)$'
-        ```
+    ```sql
+    SELECT * FROM Users WHERE email REGEXP '@(outlook\\.com|icloud\\.com)$'
+    ```
 
     Here, `$` is used to indicate the end of the string and `|` is used to specify multiple options.
 
