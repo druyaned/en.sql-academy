@@ -168,15 +168,15 @@ aimed at processing `NULL` values.
 IFNULL(value, alternative_value);
 ```
 
-The 'IFNULL`function returns the`value`passed by the first argument if it is not equal to`NULL', otherwise it returns
-an `alternative_value'.
+The `IFNULL` function returns the `value` passed by the first argument if it is not equal to `NULL`, otherwise it returns
+an `alternative_value`.
 
 ### Examples with the IFNULL function
 
 -   If the first argument is not `NULL`, then it will be returned.
 
     ```sql
-    SELECT IFNULL("SQL Academy", 'Alternative SQL Academy") AS sql_trainer;
+    SELECT IFNULL("SQL Academy", "Alternative SQL Academy") AS sql_trainer;
     ```
 
     | sql_trainer |
@@ -199,7 +199,7 @@ an `alternative_value'.
 NULLIF(value_1, value_2);
 ```
 
-The `NULLIF` function returns `NULL` if `value_1` is equal to `value_2', otherwise it returns `value_1'.
+The `NULLIF` function returns `NULL` if `value_1` is equal to `value_2`, otherwise it returns `value_1`.
 
 ### Examples with the NULLIF function
 
@@ -216,7 +216,7 @@ The `NULLIF` function returns `NULL` if `value_1` is equal to `value_2', otherwi
 -   If the values of the first and second arguments are different, the value of the first argument is returned.
 
     ```sql
-    SELECT NULLIF("SQL Academy", 'Alternative SQL Academy") AS sql_trainer;
+    SELECT NULLIF("SQL Academy", "Alternative SQL Academy") AS sql_trainer;
     ```
 
     | sql_trainer |
